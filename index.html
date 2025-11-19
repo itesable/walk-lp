@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Clube Walk — Preços de Fábrica | Black Friday • Extrema-MG</title>
+  <title>Clube Walk</title>
   <meta name="description" content="Assine o Clube Walk por R$120/ano e garanta preços especiais em produtos de limpeza 5L em Extrema-MG. Oferta Black Friday." />
   <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
   <style>
     :root{--blue:#0F4BCC;--dark:#09192f;--accent:#FFB400;--muted:#6b7280;--white:#ffffff}
     *{box-sizing:border-box}
     body{font-family:Inter,Helvetica,Arial,sans-serif;margin:0;color:#111;background:#f6f8fb}
-    header{background:linear-gradient(180deg,var(--dark),#0b2442);color:var(--white);padding:20px 16px;position:sticky;top:0;z-index:50}
-    .container{max-width:980px;margin:0 auto;padding:28px 16px}
+    header{background:linear-gradient(180deg,var(--dark),#0b2442);color:var(--white);padding:20px 16px;position:sticky;top:0;z-index:50;display: flex;justify-content: center}
+    .container{max-width:980px;margin:0 auto;padding:8px 16px}
     .nav{display:flex;align-items:center;justify-content:space-between}
     .logo{display:flex;align-items:center;gap:12px}
     .logo .mark{width:44px;height:44px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#072034}
@@ -80,12 +80,7 @@
         <img src="logo4-4.jpeg" alt="Clube Walk" class="logo-img" />
         <div>
           <div style="font-weight:800">Clube Walk</div>
-          <div style="font-size:12px;color:#dbe9ff">Black Friday • Extrema-MG</div>
         </div>
-      </div>
-      <div style="display:flex;gap:12px;align-items:center">
-        <div style="color:#dbe9ff;font-size:14px">Assinatura anual R$ 120</div>
-        <a class="btn" id="top-cta" href="https://wa.me/5535998799998?text=Quero%20assinar%20o%20Clube%20Walk">Assinar agora</a>
       </div>
     </div>
   </header>
@@ -94,12 +89,8 @@
     <!-- Hero -->
     <section class="hero">
       <div>
-        <h1>Black Friday Walk: Preços de Fábrica por 12 meses</h1>
-        <p>Pague <strong>R$ 120/ano</strong> (R$ 10/mês) e garanta os menores preços em produtos de limpeza em <strong>Extrema-MG</strong>.</p>
-        <div style="display:flex;gap:12px;margin-top:14px">
-          <a class="btn" href="#checkout" onclick="track('click_assinar')">Quero fazer parte</a>
-          <a href="#como-funciona" style="background:transparent;border:2px solid #dbe9ff;color:#dbe9ff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700">Como funciona</a>
-        </div>
+        <h1>Preços exclusivos que mercado não cobre.</h1>
+        <p>Pague <strong>R$ 10/mês </strong>e garanta os menores preços em produtos de limpeza em <strong>Extrema-MG</strong> que nenhum mercado cobre.</p>
 
         <!-- Benefits -->
         <div class="features" style="margin-top:24px">
@@ -108,15 +99,21 @@
             <p>Produtos com valores abaixo do varejo.</p>
           </div>
           <div class="feature">
-            <div style="font-size:22px;font-weight:800">Economia Real</div>
-            <p>Economize em média R$ 300–600 por ano.</p>
-          </div>
-          <div class="feature">
             <div style="font-size:22px;font-weight:800">Exclusivo Extrema</div>
             <p>Ofertas exclusivas para Extrema-MG.</p>
           </div>
+          <div class="feature">
+            <div style="font-size:22px;font-weight:800">Entregas </div>
+	    <br>
+            <p>Damos a opção de você receber os produtos de limpeza no conforto da sua casa.</p>
+          </div>
         </div>
 
+
+        <div style="display:flex;justify-content: center;gap:12px;margin-top:14px">
+          <a class="btn" href="#como-funciona" onclick="track('click_como_funciona')">Como funciona</a>
+        </div>
+        
       </div>
 
       <aside>
@@ -124,11 +121,10 @@
           <div style="display:flex;justify-content:space-between;align-items:center">
             <div>
               <div style="font-size:12px;color:var(--muted)">Assinatura anual</div>
-              <div class="price-big">R$ 120</div>
-              <div class="price-small">(R$ 10 / mês) • Black Friday</div>
+              <div class="price-big">R$ 10 por mês</div>
             </div>
             <div style="text-align:right">
-              <div style="font-size:12px;color:var(--muted)">Vagas limitadas</div>
+              <div style="font-size:19px;color:var(--muted)">Vagas limitadas</div>
               <div style="font-weight:800;margin-top:6px">Extrema-MG</div>
             </div>
           </div>
@@ -142,8 +138,8 @@
           </div>
 
           <div style="margin-top:14px;display:flex;gap:8px">
-            <a class="btn" href="#checkout" onclick="track('cta_card_assinar')">Assinar R$120</a>
-            <a href="https://wa.me/553599879-9998?text=Tenho%20interesse%20no%20Clube%20Walk" style="padding:12px;border-radius:10px;background:#eff6ff;color:#072034;text-decoration:none;font-weight:700">Falar no WhatsApp</a>
+            <a class="btn" href="#precos" onclick="track('cta_ver_tabela_completa')">Ver tabela completa</a>
+            <a href="https://wa.me/5535998799998?text=Tenho%20interesse%20no%20Clube%20Walk" style="padding:12px;border-radius:10px;background:#eff6ff;color:#072034;text-decoration:none;font-weight:700">Falar no WhatsApp</a>
           </div>
         </div>
       </aside>
@@ -176,47 +172,37 @@
           <tr><td>Sabonete Liquido 5L</td><td class="price-clube">R$ 19,70</td></tr>
         </tbody>
       </table>
-    </section>
-
-    <!-- Economia -->
-    <section style="margin-top:18px">
-      <div class="card">
-        <h3>Quanto você economiza?</h3>
-        <p style="color:var(--muted)">Uma família que compra produtos mensalmente economiza muito com a assinatura. Faça a conta: pagar R$120 por 12 meses e economizar centenas de reais por ano.</p>
-        <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
-          <div style="background:#fff;padding:14px;border-radius:10px;flex:1;min-width:220px">Economia estimada: <div style="font-weight:800;font-size:20px">R$ 300 – R$ 600/ano</div></div>
-          <div style="background:#fff;padding:14px;border-radius:10px;flex:1;min-width:220px">Preço Clube: <div style="font-weight:800;font-size:20px">R$ 120/ano</div></div>
-        </div>
-      </div>
+      
+          <div style="margin-top:14px;display:flex;gap:8px;justify-content: center">
+            <a class="btn" href="https://wa.me/5535998799998?text=Tenho%20interesse%20no%20Clube%20Walk" onclick="track('cta_ver_tabela_completa')">Falar no WhatsApp</a>
+          </div>
     </section>
 
     <!-- FAQ -->
     <section class="card faq" id="como-funciona">
       <h3>Perguntas frequentes</h3>
-      <div class="faq-item"><strong>Como funciona o Clube Walk?</strong><div style="color:var(--muted);margin-top:6px">Você paga R$ 120 uma vez por ano e tem acesso aos preços exclusivos para assinantes durante 12 meses.</div></div>
+      <div class="faq-item"><strong>Como funciona o Clube Walk?</strong><div style="color:var(--muted);margin-top:6px">Você paga R$ 10 por mês e tem acesso aos preços exclusivos para assinantes durante 12 meses.</div></div>
+      <div class="faq-item"><strong>Qual a marca dos produtos?</strong><div style="color:var(--muted);margin-top:6px">Fornecemos produtos da melhor qualidade direto da fábrica New Limp. Empresa que atua há quase 30 anos fornecendo produtos de qualidade em Extrema-MG e sul de minas.</div></div>      
       <div class="faq-item"><strong>Como retiro os produtos?</strong><div style="color:var(--muted);margin-top:6px">Retirada na loja física na Rua União Soviética, 40 - Jardim Europa - Extrema-MG.</div></div>
       <div class="faq-item"><strong>Posso receber em casa os produtos?</strong><div style="color:var(--muted);margin-top:6px">Sim, assinantes possuem uma entrega vip sem taxa, por mês. Caso precise de mais de uma entrega por mês, paga apenas a taxa de entrega.</div></div>
       <div class="faq-item"><strong>Posso cancelar?</strong><div style="color:var(--muted);margin-top:6px">Sim. O cancelamento vale para o próximo período. Você mantém os benefícios até completar o ano contratado.</div></div>
       <div class="faq-item"><strong>Os preços são fixos por 12 meses?</strong><div style="color:var(--muted);margin-top:6px">Sim — os preços informados são garantidos durante 12 meses para assinantes.</div></div>
+      <div class="faq-item"><strong>Quais as formas de pagamento?</strong><div style="color:var(--muted);margin-top:6px">Pix ou cartão.</div></div>
     </section>
 
     <!-- Checkout / Capture -->
     <section class="card" id="checkout">
-      <h3>Assine o Clube Walk</h3>
-      <p style="color:var(--muted)">Pagamento único anual • Pix ou Cartão</p>
-
-      <form id="checkout-form" onsubmit="return submitCheckout(event)" style="display:grid;gap:8px;max-width:560px">
-        <input required name="nome" placeholder="Nome completo" style="padding:12px;border-radius:8px;border:1px solid #e6eef9" />
-        <input required name="email" type="email" placeholder="E-mail" style="padding:12px;border-radius:8px;border:1px solid #e6eef9" />
-        <input required name="telefone" placeholder="Telefone (WhatsApp)" style="padding:12px;border-radius:8px;border:1px solid #e6eef9" />
-        <div style="display:flex;gap:8px">
-          <a class="btn" href="https://wa.me/5535998799998?text=Quero%20assinar%20o%20Clube%20Walk" style="display:inline-flex;align-items:center;justify-content:center;">Pagar R$ 120</a>
-          <a href="https://wa.me/5535998799998?text=Tenho%20interesse%20no%20Clube%20Walk" style="display:inline-flex;align-items:center;padding:12px;border-radius:10px;background:#eff6ff;color:#072034;text-decoration:none;font-weight:700">Falar no WhatsApp</a>
+            <div        style="
+         display:block;
+         width:100%;
+         padding:18px 0;
+         font-size:22px;
+         font-weight:800;
+         text-align:center;
+         border-radius:14px;
+       ">
+          <a class="btn" href="https://wa.me/5535998799998?text=Quero%20assinar%20o%20Clube%20Walk" onclick="track('click_assinar')">Assinar Clube Walk</a>
         </div>
-        <div id="checkout-msg" style="color:var(--muted);font-size:13px"></div>
-      </form>
-
-      <small style="display:block;margin-top:12px;color:var(--muted)">Ao pagar, você garante preços exclusivos por 12 meses. Oferta válida para Extrema-MG.</small>
     </section>
 
   </main>
@@ -224,11 +210,10 @@
   <div class="cta-sticky">
     <div class="cta-bar">
       <div>
-        <div style="font-weight:800">Assine Clube Walk • R$ 120/ano</div>
-        <div style="color:#cfe6ff;font-size:13px">Preços exclusivos: Amaciante 5L por R$13,70 e mais — Extrema-MG</div>
+        <div style="font-weight:800">Assine Clube Walk • R$ 10/mês</div>
+        <div style="color:#cfe6ff;font-size:13px">Preços exclusivos que nenhum mercado cobre — Extrema-MG</div>
       </div>
       <div style="display:flex;gap:8px;align-items:center">
-        <a class="btn" href="https://wa.me/5535998799998?text=Quero%20assinar%20o%20Clube%20Walk" onclick="track('cta_sticky')">Assinar agora</a>
         <a href="https://wa.me/5535998799998?text=Quero%20assinar%20o%20Clube%20Walk" style="background:transparent;border-radius:10px;padding:10px 12px;color:#fff;border:1px solid rgba(255,255,255,0.14);text-decoration:none">Falar no WhatsApp</a>
       </div>
     </div>
@@ -240,7 +225,7 @@
 
   <script>
     // --- CONFIGURE AQUI ---
-    const CHECKOUT_URL = "https://wa.me/5535998799998?text=Quero%20assinar%20o%20Clube%20Walk"; // substitua pelo link do MercadoPago, Yampi, Braip etc.
+    const CHECKOUT_URL = 'https://YOUR_CHECKOUT_LINK'; // substitua pelo link do MercadoPago, Yampi, Braip etc.
     const WHATSAPP_NUMBER = '5535998799998'; // formato sem +
     const FACEBOOK_PIXEL_ID = 'YOUR_PIXEL_ID'; // para rastrear eventos
 
@@ -293,4 +278,3 @@
   </script>
 </body>
 </html>
-
