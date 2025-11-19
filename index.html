@@ -255,10 +255,17 @@
     const FACEBOOK_PIXEL_ID = '25291692613817772'; // para rastrear eventos
 
     // simples função de tracking (substituir por pixel real)
-    function track(event){
-      console.log('track', event);
-      try{ if(window.fbq) fbq('track', 'Lead', {event}); }catch(e){}
+function track(eventName) {
+  console.log("trackCustom:", eventName);
+  try {
+    if (window.fbq) {
+      fbq('trackCustom', eventName, { 
+        button: eventName,
+        page: location.pathname
+      });
     }
+  } catch(e){ console.warn(e); }
+}
 
     // submit -> enviar dados para sistema e redirecionar para checkout
     function submitCheckout(e){
